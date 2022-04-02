@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="file:///android_asset/loader.js"></script>
+    <script type="text/javascript">
+    var url,v1,v2,v3,v4;
+        function load(var1, var2, var3, var4) {
+        v1 = var1;
+        v2 = var2;
+        v3 = var3;
+        v4 = var4;
+		Loader.async = true;
+		Loader.load(null, null, createUrl);
+		return url;
+	}
+	function createUrl() {
+		var startCoords = SMap.Coords.fromWGS84(v1, v2);
+		var destinationCoords = SMap.Coords.fromWGS84(v3,v4);
+
+		var smapUrl1 = new SMap.URL.Route().addStart(startCoords)
+				.addDestination(destinationCoords);
+		url = smapUrl1.toString();
+	}
+
+    </script>
+</head>
+<body onload="load(8.3247722, 59.4887319,8.3147714,59.4887319)">
+</body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/zdlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/powiadomienia"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/mwRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notif"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/gog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google Maps" />
+
+            <RadioButton
+                android:id="@+id/mcz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mapy.cz" />
+
+            <RadioButton
+                android:id="@+id/mczp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mapy.cz (pieszo)" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mwRadioGroup"
+            android:layout_centerHorizontal="true"
+            android:text="@string/wyb" />
+
+    </RelativeLayout>
+
+</LinearLayout>

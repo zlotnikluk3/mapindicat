@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195134191764",
+    "project_id": "mapindicat",
+    "storage_bucket": "mapindicat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195134191764:android:b86fbfa22fde8e93659c81",
+        "android_client_info": {
+          "package_name": "com.zlotluk.mapindicat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195134191764-8mhh4dvp0nr5vj4gsrr71flnqenfeg1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFCOrm-Pcl7id450WN3BvzaG7AeKn4lKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195134191764-8mhh4dvp0nr5vj4gsrr71flnqenfeg1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

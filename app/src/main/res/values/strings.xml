@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MapIndicat</string>
+    <string name="powiadomienia">Powiadomienia</string>
+    <string name="wyb">Wybierz mapę przed zdarzeniem:</string>
+</resources>
